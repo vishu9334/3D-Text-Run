@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.toggle {
+  font-family: sans-serif;
+  top: 0;
+  height: 50px;
+  background: #ccc;
+  display: flex;
+  color: #222;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Cube {
+  width: 400px;
+  height: 400px;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d;
+  color: #eee;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  width: fit-content;
+  white-space: nowrap;
+  font-family: impact;
+  font-size: 250px;
+}
+.front {
+  background-color: #0909098e;
+  color: #ffffff;
+}
+.side {
+  background-color: #090909;
+  color: #717171;
+}
+/* .side create for 3d shape in side  */
+.side {
+  transform-origin: 100% 50%;
+  transform: translate(-100%, -100%) rotateY(-45deg);
+}
+
+.Cube {
+  perspective: 800px;
+  /* transform: translateY(-20%) perspective(600px)
+  rotateX(15deg) */
+}
